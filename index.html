@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JSON ⇄ M3U Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>JSON ⇄ M3U Converter</h1>
+
+<div class="buttons">
+<button onclick="pasteText()">Paste</button>
+<button onclick="clearAll()">Clear</button>
+</div>
+
+<textarea id="input" placeholder="Paste JSON or M3U here..."></textarea>
+
+<div class="actions">
+<button onclick="jsonToM3u()">JSON ➜ M3U</button>
+<button onclick="m3uToJson()">M3U ➜ JSON</button>
+</div>
+
+<input type="file" id="fileInput">
+
+<textarea id="output" placeholder="Output..."></textarea>
+
+<div class="actions">
+<button onclick="copyOutput()">Copy</button>
+<button onclick="downloadM3U()">Download M3U</button>
+<button onclick="downloadJSON()">Download JSON</button>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
